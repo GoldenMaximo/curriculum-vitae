@@ -1,2 +1,2 @@
-# curriculum-vitae
-Short HTML &amp; CSS Curriculum Vitae
+# Curriculum Vitae - Gustavo Máximo
+## @ https://goldenmaximo.github.io/curriculum-vitae/
