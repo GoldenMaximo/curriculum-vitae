@@ -157,6 +157,7 @@ p {
 
 #contactDetails {
     float: right;
+    margin-top: 8px;
 }
 
 #contactDetails ul {
@@ -182,7 +183,7 @@ a[href^=tel] {
 }
 
 #contactDetails ul li a:hover {
-    color: #5b9dd1;
+    color: #f44336;
 }
 
 
