@@ -183,7 +183,7 @@ a[href^=tel] {
 }
 
 #contactDetails ul li a:hover {
-    color: #f44336;
+    color: #5b9dd1;
 }
 
 
@@ -224,14 +224,14 @@ section:last-child {
 }
 
 .sectionContent a {
-    color: #5b9dd1;
-    /* color: #444; */
+    color: #444;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-size: 1em;
 }
 
 .sectionContent a:hover {
+    color: #5b9dd1;
     text-decoration: underline;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
