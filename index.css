@@ -108,6 +108,10 @@ p {
     color: #444;
 }
 
+.keywords {
+    color: #4444447d;
+}
+
 #cv {
     width: 90%;
     max-width: 800px;
@@ -244,46 +248,9 @@ section:last-child {
     margin-bottom: 3px;
 }
 
-.keySkills {
-    list-style-type: none;
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
-    column-count: 3;
-    margin-bottom: 20px;
-    font-size: 1em;
-    color: #444;
-}
-
-.keySkills ul li {
-    margin-bottom: 3px;
-}
-
-.skillLevelTitle {
-  font-size: small;
-  font-style: italic;
-}
-
-.highSkill {
-  color: #f44336;
-}
-
-.mediumSkill {
-  color: #ffb300;
-}
-
-.lowSkill {
-  color : #03a9f4;
-}
-
 @media all and (min-width: 602px) and (max-width: 800px) {
     #headshot {
         display: none;
-    }
-
-    .keySkills {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
     }
 }
 
@@ -315,12 +282,6 @@ section:last-child {
         margin-left: -2px;
         font-size: 1.25em;
     }
-
-    .keySkills {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
 }
 
 @media all and (max-width: 480px) {
@@ -334,13 +295,6 @@ section:last-child {
 
     #mainArea {
         padding: 0 25px;
-    }
-
-
-    .keySkills {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
     }
 
     #name h1 {
