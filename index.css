@@ -1,72 +1,4 @@
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
     border: 0;
     font: inherit;
     font-size: 100%;
@@ -75,22 +7,11 @@ video {
     vertical-align: baseline;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-html,
-body {
+html, body {
     background: #181818;
     font-family: 'Lato', helvetica, arial, sans-serif;
     font-size: 16px;
@@ -120,9 +41,15 @@ p {
 }
 
 .mainDetails {
-    padding: 25px 35px;
+    padding-top: 25px;
+    padding-right: 35px;
+    padding-bottom: 25px;
+    padding-left: 35px;
     border-bottom: 2px solid #5b9dd1;
-    background: #ededed;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #name h1 {
@@ -140,6 +67,7 @@ p {
 
 #mainArea {
     padding: 0 40px;
+    background-color: white;
 }
 
 #headshot {
@@ -151,16 +79,17 @@ p {
 #headshot img {
     width: 100%;
     height: auto;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 #name {
-    float: left;
+    flex: 1;
+    margin-left: 5%;
 }
 
 #contactDetails {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #contactDetails ul {
@@ -174,8 +103,7 @@ p {
     color: #444;
 }
 
-#contactDetails ul li a,
-a[href^=tel] {
+#contactDetails ul li a, a[href^=tel] {
     color: #444;
     text-decoration: none;
     -webkit-transition: all .3s ease-in;
@@ -188,7 +116,6 @@ a[href^=tel] {
 #contactDetails ul li a:hover {
     color: #5b9dd1;
 }
-
 
 section {
     border-top: 1px solid #dedede;
@@ -247,36 +174,32 @@ section:last-child {
     margin-bottom: 3px;
 }
 
-@media all and (min-width: 602px) and (max-width: 800px) {
-    #headshot {
-        display: none;
-    }
-}
-
 @media all and (max-width: 601px) {
+    .mainDetails {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     #cv {
         width: 95%;
         margin: 10px auto;
         min-width: 280px;
     }
-
     #headshot {
-        display: none;
+        width: 50%;
+        margin: 0 auto;
     }
-
-    #name,
-    #contactDetails {
-        float: none;
+    #name, #contactDetails {
         width: 100%;
         text-align: center;
+        justify-content: center;
+        margin: 10px auto;
     }
-
-    .sectionTitle,
-    .sectionContent {
+    .sectionTitle, .sectionContent {
         float: none;
         width: 100%;
+        margin-bottom: 5%;
     }
-
     .sectionTitle {
         margin-left: -2px;
         font-size: 1.25em;
@@ -287,15 +210,12 @@ section:last-child {
     .mainDetails {
         padding: 15px 15px;
     }
-
     section {
         padding: 15px 0 0;
     }
-
     #mainArea {
         padding: 0 25px;
     }
-
     #name h1 {
         line-height: .8em;
         margin-bottom: 4px;
@@ -312,7 +232,6 @@ section:last-child {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 0;
     }
@@ -322,11 +241,9 @@ section:last-child {
     0% {
         opacity: 0;
     }
-
     40% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -336,7 +253,6 @@ section:last-child {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 0;
     }
@@ -346,11 +262,9 @@ section:last-child {
     0% {
         opacity: 0;
     }
-
     40% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -360,7 +274,6 @@ section:last-child {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 0;
     }
@@ -370,11 +283,9 @@ section:last-child {
     0% {
         opacity: 0;
     }
-
     40% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -384,11 +295,9 @@ section:last-child {
     -webkit-animation-name: reset, fade-in;
     -webkit-animation-duration: 1.5s;
     -webkit-animation-timing-function: ease-in;
-
     -moz-animation-name: reset, fade-in;
     -moz-animation-duration: 1.5s;
     -moz-animation-timing-function: ease-in;
-
     animation-name: reset, fade-in;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
@@ -398,11 +307,9 @@ section:last-child {
     -webkit-animation-name: reset, fade-in;
     -webkit-animation-duration: 2.5s;
     -webkit-animation-timing-function: ease-in;
-
     -moz-animation-name: reset, fade-in;
     -moz-animation-duration: 2.5s;
     -moz-animation-timing-function: ease-in;
-
     animation-name: reset, fade-in;
     animation-duration: 2.5s;
     animation-timing-function: ease-in;
